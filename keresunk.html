@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Zuti Roland - GP2KN2">
+    <meta name="description" content="Cocker Rocker Spániel Fajtamentő Egyesület oldala">
+    <title>Cocker Rocker - Téged keresünk!</title>
+    <link href="images/profil.jpg" rel="icon" type="image/x-icon">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="javascript/myscript.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <img src="images/profil.jpg" style="float:left ; alt="profil" width="120" height="120">
+        <a href="https://spanielmentes.hu/" target="_blank">
+            <h1 style="font-size: 60px;">TÉGED KERESÜNK !</h1>
+        </a>
+        <p class="copyright">Támogassa a Cocker Rocker Spániel Fajtamentő Egyesületet – Adjunk új esélyt a spánieleknek!</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html" class="index">FŐOLDAL</a></li>
+            <li><a href="rolunk.html">RÓLUNK</a></li>
+            <li><a href="gazdikeresok.html">GAZDIKERESŐK</a></li>
+            <li><a href="segithet.html">HOGYAN SEGÍTHET?</a></li>
+            <li><a href="keresunk.html" id="aktiv">TÉGED KERESÜNK!</a></li>
+        </ul>
+    </nav>
+
+    <select onchange="color(this.value)" style="width: 20vh; height: 4vh; font-size: medium; font-weight: bold; border-radius: 2vh; text-align: center; background-color: black; color: white;">
+        <option value="white">Eredeti háttérszín</option>
+        <option value="white">Fehér</option>
+        <option value="Red">Piros</option>
+        <option value="Yellow">Sárga</option>
+        <option value="Blue">Kék</option>
+        <option value="Green">Zöld</option>
+    </select>
+
+    <div class="container">
+    <img src="images/heroes.jpg" ; alt="heroes" ; class="float:center"> 
+    <br>
+    <article>
+        
+        <h3 style="text-align: justify;">HŐSÖKET TOBORZUNK !<br>szigorúan nyilvános projekt céljából... 
+            <br>
+            <br>
+            Miért jó Cocker Spánielek Hősének lenni?
+            <ol>
+                <li>Mert életeket menthetsz. Néha már egyetlen megosztással, kattintással is.</li>
+                <li>Mert valami jót tehetsz a mindennapokban.</li>
+                <li>Hozzájárulhatsz mások boldogságához, nem csak a kutyáéhoz, de a leendő gazdájáéhoz is.</li>
+                <li>Mert nem jó csak úgy nemesen, önzetlenül cselekedni, anélkül, hogy feltétlenül oka lenne?</li>
+            </ol>
+            Hogyan lehetsz hős?
+            <ol>
+                <li>Fogadj Tőlünk örökbe egy kis kedvencet!</li>
+                <li>Támogass bennünket ahogyan csak tudsz! </li> 
+                <li>Bánj jól a saját ebeddel!</li>
+                <li>Figyeld a híreinket és ha teheted oszd meg posztjainkat, segítségkéréseinket, heti gazdikeresőnket!</li>
+                <li>És egy új lehetőség kereteiben már VIRTUÁLIS GAZDA is lehetsz!</li>
+            </ol>
+            Mit jelent virtuális gazdának lenni?
+            <br>
+            <br>
+            Ha nem tudsz örökbe vagy ideglenesen befogadni egy kutyust, de mégis szeretnél neki segíteni, akkor virtuálisan is örökbe fogadhatod. Vagyis nem kell elvinned őt sehova, hanem a távolból támogathatod őt.
+            <ol>
+                <li>Etetheted, beoltathatod, hozzájárulhatsz az esetleges műtéti költségeihez.</li>
+                <li>Annyit költesz rá havi szinten, amennyit tudsz és akarsz, nincsenek elvárások.</li>
+                <li>Természetesen meg is látogathatod őt.</li>
+                <li>Ha úgy kívánod, példamutatásra hívva fel másokat és ismerőseidet, fel is tüntetjük az oldalon a nevedet.</li>
+            </ol>
+            Mit kell tenned ahhoz, hogy virtuális gazda lehess?
+            <ul>
+            <li>Válassz ki a Spánielmentés oldaláról egy szimpatikus kutyust, aki első látásra a szívedhez nőtt!</li>
+            <li>Írj nekünk a  spanielmentes@gmail.com-ra és megbeszéljük a részleteket, hogyan tovább!</li>
+            </ul>
+        </h3>
+
+        <div class="email-box">
+            <h2 style="font-size: 36px ; text-align: center; color: black;" >!!! HŐSNEK JELENTKEZEK !!!</h2>
+            <form id="emailForm" action="uzenet.html" method="POST">
+                <div class="error" id="error"></div>
+                <label for="email">Email cím:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="subject">Tárgy:</label>
+                <input type="text" id="subject" name="subject" required>
+    
+                <label for="message">Üzenet:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+    
+                <button type="submit">Küldés</button>
+            </form>
+        </div>
+
+    </article>
+    
+    
+
+
+    </div>
+    
+    <footer>
+                
+        <p class="copyright">Elérhetőségeink:
+            Telefon: +36-30-9983947
+            <br>
+            Bankkapcsolat:  1091 8001 – 0000 0098 – 4487 0000 (Unicredit Bank)
+            Jogosult neve: Cocker Rocker Egyesület
+            <br>
+            Adószámunk: 18029538-1-13</p>
+    </footer>
+
+</body>
+
+</html>

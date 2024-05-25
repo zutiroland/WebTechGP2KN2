@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Zuti Roland - GP2KN2">
+    <meta name="description" content="Cocker Rocker Spániel Fajtamentő Egyesület oldala">
+    <title>Cocker Rocker Spániel Fajtamentő Egyesület</title>
+    <link href="images/profil.jpg" rel="icon" type="image/x-icon">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="javascript/jquery-3.7.1.min.js"></script>
+    <script src="images/galleria/galleria-1.6.1/dist/galleria.js"></script>
+    <script src="images/galleria/galleria-1.6.1/dist/themes/classic/galleria.classic.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#images').galleria(width = 500, height = 500);
+        });
+    </script>
+    <style>
+        .galleria {
+            margin-top: 2%;
+            margin-left: 10%;
+            margin-right: 10%;
+            width: 80%;
+            height: 40vw;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <img src="images/profil.jpg" style="float: left; alt="profil" width="120" height="120">
+        <a href="https://spanielmentes.hu/" target="_blank">
+            <h1 style="font-size: 60px;">Cocker Rocker Spániel Fajtamentő Egyesület</h1>
+        </a>
+        <p class="copyright">Támogassa a Cocker Rocker Spániel Fajtamentő Egyesületet – Adjunk új esélyt a spánieleknek!</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html" class="index" id="aktiv">FŐOLDAL</a></li>
+            <li><a href="rolunk.html">RÓLUNK</a></li>
+            <li><a href="gazdikeresok.html">GAZDIKERESŐK</a></li>
+            <li><a href="segithet.html">HOGYAN SEGÍTHET?</a></li>
+            <li><a href="keresunk.html">TÉGED KERESÜNK!</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <article>
+            <p style="text-align: center;">Kedves Támogatónk! Jelenlegi és leendő védenceink nevében megköszönjük, ha adód 1%-át a Cocker Rocker Spániel Fajtamentő Egyesületnek ajánlod fel. 
+            <b><u>Adószámunk: 18029538-1-13</u></b></p>
+        </article>
+
+        <div id="images" class="galleria">
+            <img src="images/Reklam4.jpg" alt="Adószámunk: 18029538-1-13" title="Adó 1%">
+            <img src="images/Reklam1.jpg" alt="Adószámunk: 18029538-1-13" title="Adó 1%">
+            <img src="images/Reklam2.jpg" alt="13600/86" title="Adjukössze.hu">
+            <img src="images/Reklam3.jpg" alt="Adószámunk: 18029538-1-13" title="Adó 1%">
+        </div>
+
+        <br>
+        <br>
+
+        <article>
+            <p style="text-align: center;">ÉLETÜNK A FARMON... MINDENNAPJAINK...</p>
+        </article>
+
+        <br>
+        <br>
+
+        <video id="videom" controls>
+            <source src="images/video.mp4" type="video/mp4">
+        </video>
+        <p>
+        <button onclick="play()">Inditás</button>
+        <button onclick="pause()">Leállítás</button>     
+        <button onclick="playPause()">Inditás/Leállítás</button>    
+        <br>
+        <br>
+        <button onclick="mute()">Néma</button>
+        <button onclick="halk()">Halk</button>
+        <button onclick="hangos()">Hangos</button>     
+        <button onclick="nagyon_lassu()">Nagyonlassu</button>
+        <button onclick="lassu()">Lassu</button>
+        <button onclick="normalsebb()">Normál</button>
+        <button onclick="gyors()">Gyors</button>
+        <button onclick="nagyon_gyors()">Nagyon gyors</button>
+        </p>
+    </div>
+
+    <script> 
+        var myVideo = document.getElementById("videom"); 
+        
+          function playPause() { 
+            if (videom.paused) 
+              myVideo.play(); 
+              
+            else 
+              myVideo.pause(); 
+          } 
+          function play() { 
+            myVideo.play(); 
+          }
+          function pause() { 
+            myVideo.pause(); 
+          }
+          function mute(){
+              myVideo.muted = true;
+          }
+          function unmute(){
+              myVideo.muted = false;
+          }
+          function halk(){
+            myVideo.volume = 0.5;
+          }
+          function hangos(){
+            myVideo.volume = 1;
+          }
+          function nagyon_lassu()
+          {
+            myVideo.playbackRate = 0.5;
+          }
+          function lassu()
+          {
+            myVideo.playbackRate = 0.75;
+          }
+          function normalsebb()
+          {
+            myVideo.playbackRate = 1;
+          }
+          function nagyon_gyors(){
+            myVideo.playbackRate = 1.5;
+          }
+          function gyors()
+          {
+            myVideo.playbackRate = 1.25;
+          }
+        </script> 
+
+    <footer>
+        <p class="copyright">Elérhetőségeink:
+            Telefon: +36-30-9983947
+            <br>
+            Bankkapcsolat:  1091 8001 – 0000 0098 – 4487 0000 (Unicredit Bank)
+            Jogosult neve: Cocker Rocker Egyesület
+            <br>
+            Adószámunk: 18029538-1-13</p>
+    </footer>
+
+</body>
+
+</html>
